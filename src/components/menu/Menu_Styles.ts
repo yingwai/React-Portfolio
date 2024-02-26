@@ -22,6 +22,12 @@ const Menu = styled.nav`
             }
         }
     }
+    
+    a.active {
+        background: ${theme.colors.accent};
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 
     // TODO Можно ли как-то иначе реализовать подобное?
     &::before {

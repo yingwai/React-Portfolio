@@ -12,6 +12,8 @@ export const GlobalStyled = createGlobalStyle`
 
     body {
         min-width: 375px;
+        min-height: 100vh;
+
         margin: 0;
         font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
             'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -19,10 +21,27 @@ export const GlobalStyled = createGlobalStyle`
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         color: ${theme.colors.font};
+        background-color: ${theme.colors.secondaryBg};
+    }
+
+    .App {
+        min-height: 100vh;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     section {
         padding: 120px 0;
+
+        &:first-of-type {
+            padding-top: 180px;
+
+            @media ${theme.media.tabletop} {
+                padding-top: 200px;   
+            }
+        }
 
         &:nth-of-type(odd) {
             background-color: ${theme.colors.primaryBg};
@@ -36,8 +55,16 @@ export const GlobalStyled = createGlobalStyle`
         }
     }
 
+    // Todo transition не работает
     a {
         text-decoration: none;
+        color: ${theme.colors.font};
+
+        &.nav-link:hover {
+            background: ${theme.colors.accent};
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     }
 
     ul {
@@ -46,12 +73,9 @@ export const GlobalStyled = createGlobalStyle`
         font-size: 16px;
         font-weight: 500;
         line-height: 24px;
-
-        li {
-            cursor: pointer;
-        }
     }
 
+    // Todo тоже не работает transition
     button {
         color: ${theme.colors.font};
         background-color: unset;

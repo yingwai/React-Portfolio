@@ -1,21 +1,43 @@
+import {
+    createBrowserRouter,
+    RouterProvider,
+} from "react-router-dom";
 import { Footer } from "./layout/footer/Footer";
 import { Header } from "./layout/header/Header";
-import { About } from "./layout/sections/about/About";
-import { Contact } from "./layout/sections/contact/Contact";
-import { Main } from "./layout/sections/main/Main";
-import { Projects } from "./layout/sections/projects/Projects";
-import { Technologies } from "./layout/sections/technologies/Technologies";
+import { Home } from "./layout/pages/home/Home";
+import { About } from "./layout/pages/about/About";
+import { Projects } from "./layout/pages/projects/Projects";
+import { Contact } from "./layout/pages/contact/Contact";
+
+const aRouter = createBrowserRouter([
+    {
+        // Todo Чёт выглядит подозрительно, так ли надо?
+        element: <> <Header /> <Footer/> </>,
+        children: [
+            {
+                path: "/",
+                element: <Home />
+            },
+            {
+                path: "/about",
+                element: <About />
+            },
+            {
+                path: "/projects",
+                element: <Projects />
+            },
+            {
+                path: "/contact",
+                element: <Contact />
+            },
+        ]
+    },
+]);
 
 function App() {
     return (
         <div className="App">
-            <Header />
-            <Main />
-            <About />
-            <Technologies />
-            <Projects />
-            <Contact />
-            <Footer />
+            <RouterProvider router={aRouter} />
         </div>
     );
 }

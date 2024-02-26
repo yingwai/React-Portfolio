@@ -15,8 +15,12 @@ export const Footer: React.FC = () => {
                             <Logo />
 
                             <FlexWrapper alight="center" gap="30px">
-                                <Icon iconId="github" width="36px" height="36px" viewBox="0 0 36 36" />
-                                <Icon iconId="telegram" width="36px" height="36px" viewBox="0 0 36 36" />
+                                <a href="https://github.com/yingwai" target="_blank" rel="noreferrer">
+                                    <Icon iconId="github" width="36px" height="36px" viewBox="0 0 36 36" />
+                                </a>
+                                <a href="https://t.me/yingwai73" target="_blank" rel="noreferrer">
+                                    <Icon iconId="telegram" width="36px" height="36px" viewBox="0 0 36 36" />
+                                </a>
                             </FlexWrapper>
                         </FlexWrapper>
                     </S.IconBlock>

@@ -6,6 +6,8 @@ const Footer = styled.footer`
 
     background-color: ${theme.colors.primaryBg};
 
+    position: relative;
+
     nav {
         margin: 40px 0;
     }
