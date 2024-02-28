@@ -55,7 +55,6 @@ export const GlobalStyled = createGlobalStyle`
         }
     }
 
-    // Todo transition не работает
     a {
         text-decoration: none;
         color: ${theme.colors.font};
@@ -75,7 +74,6 @@ export const GlobalStyled = createGlobalStyle`
         line-height: 24px;
     }
 
-    // Todo тоже не работает transition
     button {
         color: ${theme.colors.font};
         background-color: unset;

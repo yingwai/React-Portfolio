@@ -20,10 +20,7 @@ const About = styled.section`
     }
 `
 
-// Todo Не совсем понял почему текст взял себе главенствование 
 const AboutText = styled.div`
-    flex: 1;
-
     p + p {
         margin-top: 30px;
     }

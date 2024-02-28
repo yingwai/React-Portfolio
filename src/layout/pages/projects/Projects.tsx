@@ -14,8 +14,19 @@ import HTMLTestTask2Prew from "../../../assets/images/HTMLTestTask2_Prew.png";
 import SSSCleaningPrew from "../../../assets/images/SSSCleaning_Prew.png";
 import SkyRiftersPrew from "../../../assets/images/SkyRifters_Prew.png";
 
-// Todo Как типизировать? 
-export const aAllListProject = [
+
+
+export type ProjectItemDataType = {
+    id: number
+    imgSrc: string
+    title: string
+    description: string,
+    demoUrl: string,
+    codeUrl: string,
+    isCode?: boolean
+}
+
+export const aAllListProject: ProjectItemDataType[] = [
     {
         id: 0,
         imgSrc: TargetCubePrew,
@@ -77,10 +88,9 @@ export const Projects: React.FC = () => {
 
                 <FlexWrapper justify="center" wrap="wrap" gap="42px 10px">
                     <Fade direction="up" delay={100} triggerOnce={true}>
-                        {/* Todo Можно ли как-то обратиться к дочернему типу ProjectPropsType? */}
-                        {aAllListProject.map((el: any) => {
+                        {aAllListProject.map((item: ProjectItemDataType) => {
                             return (
-                                <Project projectInfo={el} />
+                                <Project item={item} />
                             )
                         })}
                     </Fade>

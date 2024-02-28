@@ -4,7 +4,7 @@ import { FlexWrapper } from "../../../../../components/FlexWapper"
 import { Project } from "../../../projects/project/Project"
 import { S } from "./Projects_Styles";
 import React from "react";
-import { aAllListProject } from "../../../projects/Projects";
+import { ProjectItemDataType, aAllListProject } from "../../../projects/Projects";
 import { NavLink } from "react-router-dom";
 import { Fade } from "react-awesome-reveal";
 
@@ -19,9 +19,9 @@ export const Projects: React.FC = () => {
                 <FlexWrapper direction="column" alight="center" gap="60px">
                     <FlexWrapper justify="space-between" wrap="wrap" gap="42px 10px">
                         <Fade direction="up" cascade={true} delay={100} damping={0.1} triggerOnce={true}>
-                            {aListProject.map((el: any) => {
+                            {aListProject.map((item: ProjectItemDataType) => {
                                 return (
-                                    <Project projectInfo={el} />
+                                    <Project item={item} />
                                 )
                             })}
                         </Fade>

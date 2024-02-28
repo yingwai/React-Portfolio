@@ -1,6 +1,5 @@
 import React from 'react';
-// import photo from "../../assets/images/photo.png";
-import photo from "../../assets/images/47968d13-cfb9-4a34-bbe6-2def2772f685.jpg";
+import myPhoto from "../../assets/images/myPhoto.jpg";
 import { S } from "./MyPhoto_Styles";
 import Tilt from 'react-parallax-tilt';
 
@@ -14,7 +13,7 @@ export const MyPhoto: React.FC = () => {
             glareBorderRadius="50px 0px 50px 0px"
         >
             <S.ImageWrapper>
-                <img src={photo} alt="img-portfolio" />
+                <img src={myPhoto} alt="img-portfolio" />
             </S.ImageWrapper>
         </Tilt>
     );

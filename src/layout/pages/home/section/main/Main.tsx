@@ -39,7 +39,6 @@ export const Main: React.FC = () => {
                                 }}
                             />
                         </h1>
-                        {/* <h1>I'm Web Develepmer</h1> */}
 
                         <Link
                             to="home-about"

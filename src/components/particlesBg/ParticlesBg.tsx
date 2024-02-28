@@ -69,7 +69,7 @@ export const ParticlesBg = () => {
                   "line_linked": {
                     "enable": true,
                     "distance": 150,
-                    "color": "#b21447",
+                    "color": ["#b21447"],
                     "opacity": 0.5,
                     "width": 2.5,
                   },

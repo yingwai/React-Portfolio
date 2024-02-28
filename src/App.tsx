@@ -11,7 +11,6 @@ import { Contact } from "./layout/pages/contact/Contact";
 
 const aRouter = createBrowserRouter([
     {
-        // Todo Чёт выглядит подозрительно, так ли надо?
         element: <> <Header /> <Footer/> </>,
         children: [
             {
