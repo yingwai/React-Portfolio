@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 
 export const Logo: React.FC = () => {
     return (
-        <FlexWrapper alight="center" gap="15px" as={NavLink} to="/">
+        <FlexWrapper alight="center" gap="15px" as={NavLink} to="React-Portfolio/">
             <Icon iconId="logo" />
             <LogoText>Portfolio</LogoText>
         </FlexWrapper>

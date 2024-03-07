@@ -90,7 +90,7 @@ export const Projects: React.FC = () => {
                     <Fade direction="up" delay={100} triggerOnce={true}>
                         {aAllListProject.map((item: ProjectItemDataType) => {
                             return (
-                                <Project item={item} />
+                                <Project item={item} key={item.id} />
                             )
                         })}
                     </Fade>

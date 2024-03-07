@@ -21,14 +21,14 @@ export const Projects: React.FC = () => {
                         <Fade direction="up" cascade={true} delay={100} damping={0.1} triggerOnce={true}>
                             {aListProject.map((item: ProjectItemDataType) => {
                                 return (
-                                    <Project item={item} />
+                                    <Project item={item} key={item.id} />
                                 )
                             })}
                         </Fade>
                     </FlexWrapper>
 
                     <Fade direction="up" delay={150}>
-                        <NavLink to={"/projects"} className={"nav-link"}>View all projects</NavLink>
+                        <NavLink to={"React-Portfolio/projects"} className={"nav-link"}>View all projects</NavLink>
                     </Fade>
                 </FlexWrapper>
             </Container>

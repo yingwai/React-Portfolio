@@ -8,7 +8,7 @@ export const Menu: React.FC = () => {
             <ul>
                 <li>
                     <NavLink
-                        to={"/"}
+                        to={"React-Portfolio/"}
                         className={({ isActive }) =>
                             [
                                 "nav-link",
@@ -16,9 +16,9 @@ export const Menu: React.FC = () => {
                             ].join(" ")
                         }>Home</NavLink>
                 </li>
-                <li><NavLink to={"/about"} className={"nav-link"}>About me</NavLink></li>
-                <li><NavLink to={"/projects"} className={"nav-link"}>Projects</NavLink></li>
-                <li><NavLink to={"/contact"} className={"nav-link"}>Contact</NavLink></li>
+                <li><NavLink to={"React-Portfolio/about"} className={"nav-link"}>About me</NavLink></li>
+                <li><NavLink to={"React-Portfolio/projects"} className={"nav-link"}>Projects</NavLink></li>
+                <li><NavLink to={"React-Portfolio/contact"} className={"nav-link"}>Contact</NavLink></li>
             </ul>
         </S.Menu>
     )

@@ -11,7 +11,7 @@ export const ContactInfo: React.FC = () => {
             <FlexWrapper justify='space-between' wrap='wrap' gap='40px'>
                 <p>
                     If you have a proposal for me, contact me via telegram or mail. You can also follow the
-                    <NavLink to={"/contact"} className={"nav-link"} style={{color: theme.colors.input}}> link </NavLink> 
+                    <NavLink to={"React-Portfolio/contact"} className={"nav-link"} style={{color: theme.colors.input}}> link </NavLink> 
                     and write to me directly from the site.
                 </p>
 

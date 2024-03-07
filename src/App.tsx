@@ -14,19 +14,19 @@ const aRouter = createBrowserRouter([
         element: <> <Header /> <Footer/> </>,
         children: [
             {
-                path: "/",
+                path: "React-Portfolio/",
                 element: <Home />
             },
             {
-                path: "/about",
+                path: "React-Portfolio/about",
                 element: <About />
             },
             {
-                path: "/projects",
+                path: "React-Portfolio/projects",
                 element: <Projects />
             },
             {
-                path: "/contact",
+                path: "React-Portfolio/contact",
                 element: <Contact />
             },
         ]
