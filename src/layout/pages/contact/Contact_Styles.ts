@@ -23,14 +23,15 @@ const Form = styled.form`
 `
 
 const FieldWrapper = styled.div<{
-    name: string
+    id: string
 }>`
     width: 100%;
 
     &::before {
-        content: "${props => props.name}";
+        content: "${props => props.id.split("-")[1]}";
         font-weight: 400;
         color: ${theme.colors.input};
+        
     }
 `
 
